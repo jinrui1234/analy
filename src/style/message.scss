@@ -1,0 +1,103 @@
+// 消息提示
+.el-message-box {
+  width: 476px !important;
+  position: relative;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15) !important;
+  border-radius: 2px !important;
+  padding: 17px 17px 24px !important;
+  box-sizing: border-box;
+
+  .el-message-box__header {
+    padding: 11px 0 11px 47px;
+
+    .el-message-box__title {
+      font-size: 1.8rem;
+      font-family: PingFang SC;
+      font-weight: 600;
+      color: #2b2b33;
+      line-height: 2.6rem;
+    }
+
+    .el-message-box__headerbtn {
+      display: none;
+    }
+  }
+
+  .el-message-box__status {
+    font-size: 20px !important;
+    top: 42px;
+  }
+
+  .el-message-box__status+.el-message-box__message {
+    padding-left: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+  }
+
+  .el-message-box__status.el-icon-warning {
+    color: #ffa036;
+  }
+
+  .el-message-box__content {
+    padding: 0 15px 27px;
+    font-size: 1.4rem;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: #4b4b55;
+
+    .el-message-box__container {
+      position: static;
+    }
+  }
+
+  .el-message-box__btns .el-button--primary {
+    color: #fff !important;
+  }
+}
+
+.el-message.is-closable .el-message__content {
+  padding-right: 124px !important;
+}
+
+.el-message {
+  min-width: 440px !important;
+  padding: 15px 20px !important;
+  background: #fff !important;
+  border-width: 0 !important;
+  box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 2px !important;
+
+  .el-icon-close {
+    font-size: 1.4rem;
+    color: #6777ff;
+  }
+
+  .el-icon-close:before {
+    // content: "#{'\5173\95ed'}";
+    content: "关闭";
+  }
+
+  .el-message__closeBtn:hover {
+    color: #475aff;
+  }
+
+  .el-message__content {
+    color: #6b6b77 !important;
+  }
+
+  .el-icon-success {
+    color: #2bbc7a !important;
+  }
+
+  .el-icon-warning {
+    color: #ffa036 !important;
+  }
+
+  .el-icon-voice {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: url("~@/assets/img/common/message-info-icon.png") center;
+    background-size: 100%;
+    margin-right: 10px;
+  }
+}
